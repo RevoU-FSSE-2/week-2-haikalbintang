@@ -1,9 +1,8 @@
-# My Landing Website - Penguin Fanclub
-Assignment Example for Week 3 - Making a landing web page (example: Penguin Fanclub Website)
+# My Landing Website - The Holy Quran
 
 - Using Responsive Design with Mobile First Approach
 - Using Grid Layout
 - Using Flex Layout
 - Including dummy Registration Form
 
-Layout: https://astonishing-llama-40b674.netlify.app/
+Muhammad Haikal Bintang - Week 02 Assignment: [Netlify Deploy](https://astounding-cranachan-a7e472.netlify.app/)
