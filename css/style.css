@@ -1,0 +1,21 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+header {
+    display: flex;
+}
+nav ul {
+    display: flex;
+    text-decoration: none;
+}
+#mangekyo-icon {
+    height: 32px;
+    width: 32px;
+}
+#mangekyo-designs {
+
+}
+.mangekyo-photos {
+    display: flex;
+}
