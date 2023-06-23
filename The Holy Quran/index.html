@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A web application to show photos of penguins"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Aditya Pradita" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Holy Quran</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdSyRB-vV8gqVl3Hrn_Wvx4lDyoIc4URKapcjD4ZOz4oO0z0K8Z-6CCk7UpsyPV_InkI&usqp=CAU"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav>
+      <span class="mobile">
+        <img
+          src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg"
+          alt="Hamburger Icon"
+        />
+      </span>
+      <span class="relative-container">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdSyRB-vV8gqVl3Hrn_Wvx4lDyoIc4URKapcjD4ZOz4oO0z0K8Z-6CCk7UpsyPV_InkI&usqp=CAU"
+          alt="The Holy Quran Icon"
+        />
+        <p><b>The </b>Holy <b>Quran</b></p>
+      </span>
+
+      <ul class="desktop">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header class="full-screen" id="header">
+      <h1>The Holy Quran</h1>
+      <p>
+        <strong>The Holy Quran</strong> (Al Quran) was revealed to the last and
+        final messenger of Allah Swt.: Prophet Muhammad pbuh
+      </p>
+    </header>
+    <main>
+      <section id="penguin-photos">
+        <h2>Al Quran from Time to Time</h2>
+        <div class="grid-container">
+          <div id="item-1">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/93/Qur%27anic_Manuscript_-_3_-_Hijazi_script.jpg"
+              alt="Early Quranic manuscript."
+            />
+          </div>
+          <div id="item-2">
+            <img
+              src="https://idsb.tmgrup.com.tr/2015/07/27/GenelBuyuk/1437950104915_rs.jpg"
+              alt="Oldest Quran still a matter of controversy."
+            />
+          </div>
+          <div id="item-3">
+            <img
+              src="https://m.media-amazon.com/images/I/711qzahJdlL._AC_UF1000,1000_QL80_.jpg"
+              alt="The Holy Quran."
+            />
+          </div>
+          <div id="item-4">
+            <img
+              src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/MTA-7256152/cordoba_cordoba-al-quran-al-hufaz-hafalan-mudah-a5-buku-religi_full07.jpg"
+              alt="Cordoba Al Quran Al Hufaz."
+            />
+          </div>
+          <div id="item-5">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Al Quran Braille."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="penguin-facts">
+        <h2>Facts about The Holy Quran</h2>
+        <div class="flex-container">
+          <ul>
+            <li>
+              It is revealed in arabic, and remain in its original language
+            </li>
+            <li>It consist of 30 juz</li>
+            <li>It consist of 114 surah</li>
+            <li>It consist of 6236 ayah</li>
+          </ul>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVyYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+              alt="A great quality Al Quran image."
+            />
+            <figcaption>A beautiful Quran.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="section-video">
+        <h2>Al Quran recitation of the first surah</h2>
+        <div class="flex-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-PqP0BCiTlE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="form-section">
+        <h2>Join The Holy Quran Website!</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+
+            <div>
+              <p>Are you living in Indonesia?</p>
+              <input type="radio" id="yes" name="isIndonesia" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isIndonesia" value="Female" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Purchase (Free) Now:</legend>
+            <div>
+              <p>What do you think about Al Quran?</p>
+              <input
+                id="beautiful"
+                type="checkbox"
+                name="personality"
+                value="baeutiful"
+              />
+              <label for="beautiful">Beautiful</label>
+              <input
+                id="amazing"
+                type="checkbox"
+                name="personality"
+                value="amazing"
+              />
+              <label for="amazing">Amazing</label>
+              <input
+                id="mesmerizing"
+                type="checkbox"
+                name="personality"
+                value="mesmerizing"
+              />
+              <label for="mesmerizing">Mesmerizing</label>
+            </div>
+            <div>
+              <p>Tell us why you love Al Quran!</p>
+              <textarea rows="3"></textarea>
+            </div>
+            <div>
+              <p>What type of Quran do you want to get?</p>
+              <input
+                type="radio"
+                id="cordoba"
+                name="isIndonesia"
+                value="sheMale"
+              />
+              <label for="cordoba">Cordoba</label>
+              <input
+                type="radio"
+                id="al hufaz"
+                name="isIndonesia"
+                value="Male"
+              />
+              <label for="al hufaz">Al Hufaz</label>
+              <input
+                type="radio"
+                id="braille"
+                name="isIndonesia"
+                value="Female"
+              />
+              <label for="braille">Braille</label>
+            </div>
+            <div>
+              <p>Upload your payment proof here (now free):</p>
+              <input
+                type="file"
+                id="photo"
+                name="myPenguinPhoto"
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
