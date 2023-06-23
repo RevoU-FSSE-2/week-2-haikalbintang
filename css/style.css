@@ -3,19 +3,103 @@ body {
     margin: 0;
 }
 header {
+    position: fixed;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+#logo-img {
+    margin: 10px;
+    height: 50px;
+}
+#logo-title {
+    font-size: 17px;
+}
+.header-left {
     display: flex;
 }
-nav ul {
+nav > ul {
     display: flex;
+}
+nav > ul > li {
+    list-style-type: none;
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 3px; 
+}
+nav > ul > li > a {
+    color:  rgb(34, 34, 34);
     text-decoration: none;
 }
-#mangekyo-icon {
+nav > ul > li > a:hover {
+    color: white;
+    text-decoration: none;
+}
+nav > ul > li:hover {
+    text-decoration: none;
+    color: white;
+    background-color: firebrick;
+}
+.header-left {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    display: flex;
+}
+#icon-logo #icon-title {
     height: 32px;
     width: 32px;
 }
-#mangekyo-designs {
-
+.desktop-nav {
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
 }
+main {
+    margin-top: 81px;
+}
+
 .mangekyo-photos {
     display: flex;
+}
+.heroku {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mangekyo-designs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mangekyo-facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mangekyo-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

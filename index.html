@@ -11,35 +11,45 @@
   <body>
     <!-- Header&NavBar -->
     <header>
-      <div>
-        <div class="mobile">
+      <div class="header-left">
+        <!-- <div id="hamburger" class="mobile">
           <img
             src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg"
             alt="Hamburger Icon"
           />
+        </div> -->
+        <div class="icon">
+          <div id="icon-logo">
+            <img
+              id="logo-img"
+              src="assets/Mangekyō_Sharingan_Itachi.svg"
+              alt="Itachi's Mangekyō Sharingan"
+            />
+          </div>
+          <div id="logo-title">
+            <p><b>Mangekyō Sharingan</b></p>
+          </div>
         </div>
-        <img
-          id="mangekyo-icon"
-          src="assets/Mangekyō_Sharingan_Itachi.svg"
-          alt="Itachi's Mangekyō Sharingan"
-        />
-        <p><b>Mangekyō Sharingan</b></p>
       </div>
-      <nav>
-        <ul class="desktop">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+
+      <div id="header-right">
+        <nav>
+          <ul class="desktop">
+            <li><a href="#" class="desktop-nav">Home</a></li>
+            <li><a href="#" class="desktop-nav">About</a></li>
+            <li><a href="#" class="desktop-nav">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <!-- Main Section -->
     <main>
-      <section>
+      <section class="heroku">
         <h1>Mangekyō Sharingan</h1>
         <p>Mangekyō Sharingan is the most famous and beautiful Doujutsu!</p>
       </section>
-      <section id="mangekyo-designs">
+      <section class="mangekyo-designs">
         <div><h2>Mangekyō Sharingan Designs</h2></div>
         <div class="mangekyo-photos">
           <div>
@@ -86,14 +96,107 @@
           </div>
         </div>
       </section>
-      <section>
-        <h2>Facts about Mangekyō Sharingan</h2>
+      <section class="mangekyo-facts">
+        <h2>What Mangekyō Sharingan usually do</h2>
+        <ul>
+          <li>Amaterasu</li>
+          <li>Susanoo</li>
+          <li>Tsukuyomi</li>
+        </ul>
       </section>
-      <section>
+      <section class="mangekyo-video">
         <h2>Mangekyō Sharingan Transformation</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/P_f7RUuTUuI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </section>
     </main>
-    <!-- Footer -->
-    <footer></footer>
+    <!-- Footer&Form -->
+    <footer>
+      <form action="#">
+        <fieldset>
+          <legend>Personal Data:</legend>
+          <div>
+            <label for="fullName">Full Name:</label>
+            <input id="fullName" type="text" required />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" required />
+          </div>
+
+          <div>
+            <p>Are you living in Indonesia?</p>
+            <input type="radio" id="yes" name="isIndonesia" value="Male" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="isIndonesia" value="Female" />
+            <label for="no">No</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Voting for favorite Mangekyō Sharingan:</legend>
+          <div>
+            <p>What do you think about Mangekyō Sharingan?</p>
+            <input
+              id="beautiful"
+              type="checkbox"
+              name="personality"
+              value="beautiful"
+            />
+            <label for="beautiful">Beautiful</label>
+            <input
+              id="scary"
+              type="checkbox"
+              name="personality"
+              value="scary"
+            />
+            <label for="scary">Scary</label>
+            <input
+              id="versatile"
+              type="checkbox"
+              name="personality"
+              value="versatile"
+            />
+            <label for="versatile">Versatile</label>
+          </div>
+          <div>
+            <p>Tell us why you love Mangekyo Sharingan!</p>
+            <textarea rows="3"></textarea>
+          </div>
+          <div>
+            <p>Whose Mangekyo Sharingan do you like the most?</p>
+            <input type="radio" id="itachi" name="favMS" value="itachi" />
+            <label for="itachi">Itachi</label>
+            <input type="radio" id="shisui" name="favMS" value="shisui" />
+            <label for="shisui">Shisui</label>
+            <input type="radio" id="itachi" name="favMS" value="itachi" />
+            <label for="itachi">Itachi</label>
+            <input type="radio" id="itachi" name="favMS" value="itachi" />
+            <label for="itachi">Itachi</label>
+            <input type="radio" id="itachi" name="favMS" value="itachi" />
+            <label for="itachi">Itachi</label>
+            <input type="radio" id="itachi" name="favMS" value="itachi" />
+            <label for="itachi">Itachi</label>
+          </div>
+          <div>
+            <p>Upload your Mangekyo Sharingan fanart:</p>
+            <input
+              type="file"
+              id="photo"
+              name="myMSFanart"
+              accept="image/png, image/jpeg"
+            />
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </footer>
   </body>
 </html>
