@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mangekyō Sharingan | Collection</title>
-    <link
-      rel="icon"
-      href="assets/Mangekyō_Sharingan_Itachi.svg"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="Mangekyō_Sharingan_Itachi.svg" type="image/svg" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
@@ -16,8 +12,9 @@
     <!-- Header&NavBar -->
     <header>
       <div class="header-left">
-        <div id="hamburger" class="mobile">
+        <div class="mobile">
           <img
+            id="hamburger"
             src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg"
             alt="Hamburger Icon"
           />
@@ -25,12 +22,12 @@
 
         <div class="branding">
           <div id="branding-logo">
-            <img
-              class="them-eyes"
-              id="logo-img"
-              src="assets/Mangekyō_Sharingan_Itachi.svg"
-              alt="Itachi's Mangekyō Sharingan"
-            />
+            <a class="spinning" href="#">
+              <img
+                id="logo-img"
+                src="assets/Mangekyō_Sharingan_Itachi.svg"
+                alt="Itachi's Mangekyō Sharingan"
+            /></a>
           </div>
 
           <div id="branding-text">
@@ -52,10 +49,15 @@
 
     <!-- Main Section -->
     <main>
+      <!-- Heroku -->
       <section class="heroku">
         <h1>Mangekyō Sharingan</h1>
-        <p>Mangekyō Sharingan is the most famous and beautiful Doujutsu!</p>
+        <br />
+        <br />
+        <br />
+        <p>Mangekyō Sharingan is the most famous and deadly Doujutsu!</p>
       </section>
+      <!-- MS Designs -->
       <section class="mangekyo-designs">
         <div><h2>Mangekyō Sharingan Designs</h2></div>
         <div class="mangekyo-photos">
@@ -127,20 +129,31 @@
           </div>
         </div>
       </section>
+      <!-- MS Facts -->
       <section class="mangekyo-facts">
         <h2>What Mangekyō Sharingan usually do</h2>
-        <ul>
-          <li>Amaterasu</li>
-          <li>Susanoo</li>
-          <li>Tsukuyomi</li>
-        </ul>
-        <figure class="facts-img">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMjSpABsYrqxk--KEDxG6WCG8tRvGCrVpUWA&usqp=CAU"
-            alt="Itachi's susanoo."
-          />
-          <figcaption>Itachi's Susanoo.</figcaption>
-        </figure>
+        <div class="facts-grid-container">
+          <div class="item-1">
+            <ul>
+              <li>Amaterasu</li>
+              <li>Susanoo</li>
+              <li>Tsukuyomi</li>
+            </ul>
+          </div>
+          <div class="item-2">
+            <figure class="facts-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMjSpABsYrqxk--KEDxG6WCG8tRvGCrVpUWA&usqp=CAU"
+                alt="Itachi's susanoo."
+              />
+              <figcaption>Itachi's Susanoo.</figcaption>
+            </figure>
+          </div>
+          <div class="item-3"></div>
+          <div class="item-4"></div>
+          <div class="item-5"></div>
+          <div class="item-6"></div>
+        </div>
       </section>
       <section class="mangekyo-video">
         <h2>Mangekyō Sharingan Transformation</h2>

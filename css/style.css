@@ -18,9 +18,13 @@ header {
     flex-direction: row;
 }
 #hamburger {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 18px;
 }
 .branding {
     display: flex;
@@ -30,14 +34,29 @@ header {
     margin: 10px;
     height: 50px;
 }
+.spinning {
+    height: 50px;
+    width: 50px;
+}
 #logo-img {
     width: 50px;
     height: 50px;
+    transition: transform 2s ease;
+    z-index: 1;
 }
+#logo-img:hover {
+    transition: transform 2s;
+    transform: translateX(230px);
+    /* transform: rotate(-240deg); */
+}
+
 #branding-text {
     font-size: 17/16rem;
 }
-
+/* #branding-text:hover {
+    transition: transform 2s;
+    transform: translateX(-50px);
+} */
 .header-right {
     margin-right: 10px;
 }
@@ -62,6 +81,7 @@ nav > ul > li:hover {
     text-decoration: none;
     color: white;
     background-color: firebrick;
+    transition: 1s;
 }
 .icon {
     display: flex;
@@ -77,27 +97,43 @@ nav > ul > li:hover {
     z-index: 1;
     padding: 10px;
 }
-main {
-    margin-top: 81px;
-}
 
-.mangekyo-photos {
-    display: flex;
+/* Main */
+main {
+    margin-top: 90px;
 }
+/* Heroku */
 .heroku {
+    color: white;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(207, 100, 29);
-}
+    background-color: black;
+    background-image: url(Sharingan-pixabay.webp);
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-position: center;
+    background-size: 500px 300px;
+    border-top: 5px solid rgb(207, 100, 29);
+    border-bottom: 5px solid rgb(207, 100, 29);
+ }
+ .heroku > h1 {
+    text-shadow: 5px 5px #b10303;
+ }
+ .heroku > p {
+    text-shadow: 5px 5px #b10303;
+ }
+ /* MS Designs */
 .mangekyo-designs {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 .mangekyo-photos {
+    display: flex;
     width: 100%;
     justify-content: space-around;
 }
@@ -107,20 +143,60 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .them-eyes {
     border-radius: 100%;
     transition: transform 2s;
+    animation-name: spining;
+    animation-duration: 2s;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
 }
 .them-eyes:hover {
     transition: 2s;
     transform: rotate(-240deg);
 }
+/* MS Facts */
 .mangekyo-facts {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(207, 100, 29);
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.facts-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 240px);
+    gap: 10px;
+    border: 2px solid black;
+}
+.item-1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #b10303;
+}
+.item-2 {
+    background-color: aqua;
+}
+.item-3 {
+    background-color: blueviolet;
+}
+.item-4 {
+    background-color: chartreuse;
+}
+.item-5 {
+    background-color: black;
+    background-image: url(sasuke\ MS.jpg);
+    background-repeat: no-repeat;
+}
+.item-6 {
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 .facts-img {
     display: flex;
@@ -135,6 +211,7 @@ main {
     align-items: center;
 }
 footer {
+    border-top: 5px solid rgb(207, 100, 29);
     margin-top: 15px;
     display: flex;
     flex-direction: column;
