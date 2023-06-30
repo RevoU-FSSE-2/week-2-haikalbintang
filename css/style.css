@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Naruto-Sans;
+    src: url(fonts/njnaruto.ttf);
+}
+font-face {
+    font-family: Naruto-Sans;
+    src: url(fonts/njnaruto.ttf);
+    font-weight: bold;
+}
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
@@ -12,12 +21,14 @@ header {
     left: 0;
     width: 100%;
     border-bottom: 5px solid rgb(207, 100, 29);
+    z-index: 2;
 }
 .header-left {
     display: flex;
     flex-direction: row;
 }
 #hamburger {
+    filter: invert(100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,8 +61,9 @@ header {
     /* transform: rotate(-240deg); */
 }
 
-#branding-text {
+#branding-text > p > b {
     font-size: 17/16rem;
+    font-family: Naruto-Sans, "Open Sans", sans-serif;
 }
 /* #branding-text:hover {
     transition: transform 2s;
@@ -81,7 +93,7 @@ nav > ul > li:hover {
     text-decoration: none;
     color: white;
     background-color: firebrick;
-    transition: 1s;
+    transition: 0.8s;
 }
 .icon {
     display: flex;
@@ -100,7 +112,7 @@ nav > ul > li:hover {
 
 /* Main */
 main {
-    margin-top: 90px;
+    margin: 90px auto 0px auto;
 }
 /* Heroku */
 .heroku {
@@ -119,12 +131,29 @@ main {
     border-top: 5px solid rgb(207, 100, 29);
     border-bottom: 5px solid rgb(207, 100, 29);
  }
- .heroku > h1 {
-    text-shadow: 5px 5px #b10303;
+ .heroku p {
+    font-size: 20px;
  }
- .heroku > p {
+ .heroku-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-shadow: 5px 5px #b10303;
+    left: 3000px;
+    animation: slideIn 2s forwards;
  }
+ .heroku-slide > h1 {
+    font-size: 32px;
+ }
+ @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
  /* MS Designs */
 .mangekyo-designs {
     display: flex;
@@ -143,7 +172,9 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+.whose-eyes figcaption {
+    font-size: 20px;
+}
 .them-eyes {
     border-radius: 100%;
     transition: transform 2s;
@@ -153,9 +184,15 @@ main {
     animation-duration: 4s;
     animation-delay: 2s;
 }
+@keyframe spinning {
+    0% {transform: rotate(-240deg)}
+    50% {transform: scale(0.7)}
+    100% {transform: rotate(0deg)}
+}
 .them-eyes:hover {
     transition: 2s;
-    transform: rotate(-240deg);
+    transform: rotate(-360deg) scale(0.7);
+    animation-name: spinning;
 }
 /* MS Facts */
 .mangekyo-facts {
@@ -163,40 +200,112 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(207, 100, 29);
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    color: white;
+    background-color: black;
+    border-top: 5px solid rgb(207, 100, 29);;
+    border-bottom: 5px solid rgb(207, 100, 29);;
 }
 .facts-grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(3, 240px);
-    gap: 10px;
-    border: 2px solid black;
+    gap: 24px;
+    padding: 0 24px 24px 24px;
+    border: 2px solid black
 }
+
 .item-1 {
     grid-row-start: 1;
     grid-row-end: 4;
+    width: 100%;
+    overflow: hidden;
     background-color: #b10303;
+    border-radius: 5px;
 }
+.item-1:hover {
+    transform: scale(1.1);
+}
+.item-1 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
+}
+
 .item-2 {
+    width: 100%;
+    overflow: hidden;
     background-color: aqua;
+    border-radius: 5px;
+}
+.item-2:hover {
+    transform: scale(1.1);
+}
+.item-2 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-3 {
+    width: 100%;
+    overflow: hidden;
     background-color: blueviolet;
+    border-radius: 5px;
+}
+.item-3:hover {
+    transform: scale(1.1);
+}
+.item-3 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-4 {
+    width: 100%;
+    overflow: hidden;
     background-color: chartreuse;
+    border-radius: 5px;
+}
+.item-4:hover {
+    transform: scale(1.1);
+}
+.item-4 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-5 {
+    width: 100%;
+    overflow: hidden;
     background-color: black;
-    background-image: url(sasuke\ MS.jpg);
-    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.item-5:hover {
+    transform: scale(1.1);
+}
+.item-5 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-6 {
-    background-color: yellow;
     grid-column-start: 2;
     grid-column-end: 4;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.item-6:hover {
+    transform: scale(1.1);
+}
+.item-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .facts-img {
     display: flex;
@@ -248,7 +357,8 @@ textarea {
 /* for tablet and phone */
 @media only screen and (max-width: 768px) {
     body {
-    width: auto;
+    width: 100%;
+    margin: 0 auto;
     }
     .mangekyo-photos {
         width: 100%;
@@ -256,4 +366,5 @@ textarea {
         display:flex;
         flex-direction: column;
     }
+    
 }
